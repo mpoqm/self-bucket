@@ -5,8 +5,7 @@
   "license": "Unknown",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/Achilng/floral-notepaper/releases/download/v1.1.0/floral-notepaper_1.1.0.exe#/floral-notepaper.exe",
-      "hash": "skip"
+      "url": "https://github.com/Achilng/floral-notepaper/releases/download/v1.1.0/floral-notepaper_1.1.0.exe#/floral-notepaper.exe"
     }
   },
   "shortcuts": [
