@@ -1,0 +1,28 @@
+{
+  "version": "1.1.0",
+  "description": "A floral notepaper application.",
+  "homepage": "https://github.com/Achilng/floral-notepaper",
+  "license": "Unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/Achilng/floral-notepaper/releases/download/v1.1.0/floral-notepaper_1.1.0.exe#/floral-notepaper.exe",
+      "hash": "skip"
+    }
+  },
+  "shortcuts": [
+    [
+      "floral-notepaper.exe",
+      "Floral Notepaper"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/Achilng/floral-notepaper"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/Achilng/floral-notepaper/releases/download/v$version/floral-notepaper_$version.exe#/floral-notepaper.exe"
+      }
+    }
+  }
+}
