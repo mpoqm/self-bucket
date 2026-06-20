@@ -1,0 +1,19 @@
+{
+  "version": "0.61.2",
+  "description": "BetterGI: Better Genshin Impact automation tool.",
+  "homepage": "https://github.com/babalae/better-genshin-impact",
+  "license": "GPL-3.0-or-later",
+  "url": "https://github.com/babalae/better-genshin-impact/releases/download/0.61.2/BetterGI_v0.61.2.7z",
+  "shortcuts": [
+    [
+      "BetterGI.exe",
+      "BetterGI"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/babalae/better-genshin-impact"
+  },
+  "autoupdate": {
+    "url": "https://github.com/babalae/better-genshin-impact/releases/download/$version/BetterGI_v$version.7z"
+  }
+}
