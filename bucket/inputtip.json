@@ -1,0 +1,19 @@
+{
+  "version": "3.6.7",
+  "description": "InputTip: input method state tips for Windows.",
+  "homepage": "https://github.com/abgox/InputTip",
+  "license": "Unknown",
+  "url": "https://github.com/abgox/InputTip/releases/download/v3.6.7/InputTip.zip",
+  "shortcuts": [
+    [
+      "InputTip.exe",
+      "InputTip"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/abgox/InputTip"
+  },
+  "autoupdate": {
+    "url": "https://github.com/abgox/InputTip/releases/download/v$version/InputTip.zip"
+  }
+}
