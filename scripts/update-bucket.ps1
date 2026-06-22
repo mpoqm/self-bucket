@@ -103,7 +103,11 @@ try {
         $changes = git status --porcelain
         if ($changes) {
             git add bucket
-            git commit -m "Update Scoop manifests"
+            $timestamp = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId(
+              [DateTime]::UtcNow,
+              "China Standard Time"
+            ).ToString("yyyy-MM-dd HH:mm:ss 'CST'")
+            git commit -m "Update Scoop manifests - $timestamp"
         } else {
             Write-Host "No changes to commit." -ForegroundColor Yellow
         }
