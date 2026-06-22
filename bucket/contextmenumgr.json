@@ -5,10 +5,12 @@
   "license": "Unknown",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.0/ContextMenuMgrPlus-1.7.0-x64-self-contained-portable.zip"
+      "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.0/ContextMenuMgrPlus-1.7.0-x64-self-contained-portable.zip",
+	  "hash": "7fd2c90bb94b9f7c1da80332037989702e216725eb58c43e3a350ea7e83ecc1a"
     },
     "arm64": {
-      "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.0/ContextMenuMgrPlus-1.7.0-arm64-self-contained-portable.zip"
+      "url": "https://github.com/PLFJY/ContextMenuMgr/releases/download/v1.7.0/ContextMenuMgrPlus-1.7.0-arm64-self-contained-portable.zip",
+	  "hash": "c8358eebc590136407efbf73df0c00074f14342259e48258d7691e00f702aad7"
     }
   },
   "shortcuts": [

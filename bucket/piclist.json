@@ -5,10 +5,12 @@
   "license": "GPL-3.0-or-later",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-x64-portable.7z"
+      "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-x64-portable.7z",
+	  "hash": "e08b1bca93be5f6a06feca34f0ae96411dd0ebd3f97a7f928d11f80fe3489a81"
     },
     "arm64": {
-      "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-arm64-portable.7z"
+      "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.5.0/PicList-Setup-3.5.0-arm64-portable.7z",
+	  "hash": "6a9a7a5162525b3f9981b85e388f558985aa4f7476175a4b46849e41b91d072a"
     }
   },
   "shortcuts": [
