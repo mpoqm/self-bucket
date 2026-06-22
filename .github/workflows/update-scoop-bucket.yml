@@ -1,0 +1,43 @@
+name: Update Scoop Bucket
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout bucket
+        uses: actions/checkout@v4
+
+      - name: Install Scoop
+        shell: pwsh
+        run: |
+          Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+          Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+          "$env:USERPROFILE\scoop\shims" >> $env:GITHUB_PATH
+
+      - name: Update bucket
+        shell: pwsh
+        run: |
+          .\scripts\update-bucket.ps1
+
+      - name: Commit changes
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if (git status --porcelain) {
+            git add bucket
+            git commit -m "Update Scoop manifests"
+            git push
+          } else {
+            Write-Host "No changes."
+          }
