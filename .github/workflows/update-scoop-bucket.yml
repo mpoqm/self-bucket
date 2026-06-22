@@ -34,10 +34,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if (git status --porcelain) {
+          $changes = git status --porcelain -- bucket
+
+          if ($changes) {
+            $timestamp = [System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId(
+              [DateTime]::UtcNow,
+              "China Standard Time"
+            ).ToString("yyyy-MM-dd HH:mm:ss 'CST'")
+
             git add bucket
-            git commit -m "Update Scoop manifests"
+            git commit -m "Update Scoop manifests - $timestamp"
             git push
           } else {
-            Write-Host "No changes."
+            Write-Host "No bucket manifest changes."
           }
+
