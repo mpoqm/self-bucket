@@ -9,13 +9,13 @@
     "64bit": {
       "bin": [
         [
-          "DiskInfo64.exe",
+          "DiskInfo64S.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfo64.exe",
+          "DiskInfo64S.exe",
           "CrystalDiskInfo Shizuku Edition"
         ]
       ]
@@ -23,13 +23,13 @@
     "32bit": {
       "bin": [
         [
-          "DiskInfo32.exe",
+          "DiskInfo32S.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfo32.exe",
+          "DiskInfo32S.exe",
           "CrystalDiskInfo Shizuku Edition"
         ]
       ]
@@ -37,13 +37,13 @@
     "arm64": {
       "bin": [
         [
-          "DiskInfoA64.exe",
+          "DiskInfoA64S.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfoA64.exe",
+          "DiskInfoA64S.exe",
           "CrystalDiskInfo Shizuku Edition"
         ]
       ]
