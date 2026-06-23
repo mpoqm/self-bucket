@@ -1,0 +1,63 @@
+{
+  "version": "9.9.1",
+  "description": "A HDD/SSD utility software with Aoi themed UI",
+  "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
+  "license": "MIT",
+  "url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.1/CrystalDiskInfo9_9_1Aoi.zip",
+  "hash": "md5:66dfc9881eec0f08a40978b9f8644763",
+  "architecture": {
+    "64bit": {
+      "bin": [
+        [
+          "DiskInfo64.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfo64.exe",
+          "CrystalDiskInfo Aoi Edition"
+        ]
+      ]
+    },
+    "32bit": {
+      "bin": [
+        [
+          "DiskInfo32.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfo32.exe",
+          "CrystalDiskInfo Aoi Edition"
+        ]
+      ]
+    },
+    "arm64": {
+      "bin": [
+        [
+          "DiskInfoA64.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfoA64.exe",
+          "CrystalDiskInfo Aoi Edition"
+        ]
+      ]
+    }
+  },
+  "persist": [
+    "Smart",
+    "DiskInfo.ini"
+  ],
+  "checkver": {
+    "sourceforge": "crystaldiskinfo",
+    "regex": "([\\d.]+)/CrystalDiskInfo.*Aoi\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://sourceforge.net/projects/crystaldiskinfo/files/$version/CrystalDiskInfo$underscoreVersionAoi.zip"
+  }
+}

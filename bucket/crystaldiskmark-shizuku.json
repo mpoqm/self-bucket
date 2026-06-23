@@ -1,0 +1,64 @@
+{
+  "version": "9.0.3",
+  "description": "A simple disk benchmark software with Shizuku themed UI",
+  "homepage": "https://crystalmark.info/en/software/crystaldiskmark/",
+  "license": "BSD-3-Clause",
+  "url": "https://sourceforge.net/projects/crystaldiskmark/files/9.0.3/CrystalDiskMark9_0_3Shizuku.zip",
+  "hash": "md5:7843935b5e5902a852533f2e2ef7940e",
+  "architecture": {
+    "64bit": {
+      "bin": [
+        [
+          "DiskMark64.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMark64.exe",
+          "CrystalDiskMark Shizuku Edition"
+        ]
+      ]
+    },
+    "32bit": {
+      "bin": [
+        [
+          "DiskMark32.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMark32.exe",
+          "CrystalDiskMark Shizuku Edition"
+        ]
+      ]
+    },
+    "arm64": {
+      "bin": [
+        [
+          "DiskMarkA64.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMarkA64.exe",
+          "CrystalDiskMark Shizuku Edition"
+        ]
+      ]
+    }
+  },
+  "persist": [
+    "DiskMark32.ini",
+    "DiskMark64.ini",
+    "DiskMarkA64.ini"
+  ],
+  "checkver": {
+    "sourceforge": "crystaldiskmark",
+    "regex": "([\\d.a-zA-Z]+)/CrystalDiskMark.*Shizuku\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://sourceforge.net/projects/crystaldiskmark/files/$version/CrystalDiskMark$underscoreVersionShizuku.zip"
+  }
+}

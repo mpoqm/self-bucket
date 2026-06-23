@@ -1,0 +1,63 @@
+{
+  "version": "9.9.1",
+  "description": "A HDD/SSD utility software with Shizuku themed UI",
+  "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
+  "license": "MIT",
+  "url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.1/CrystalDiskInfo9_9_1Shizuku.zip",
+  "hash": "md5:2688dcda7f8c8b809c13e9c461e922e9",
+  "architecture": {
+    "64bit": {
+      "bin": [
+        [
+          "DiskInfo64.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfo64.exe",
+          "CrystalDiskInfo Shizuku Edition"
+        ]
+      ]
+    },
+    "32bit": {
+      "bin": [
+        [
+          "DiskInfo32.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfo32.exe",
+          "CrystalDiskInfo Shizuku Edition"
+        ]
+      ]
+    },
+    "arm64": {
+      "bin": [
+        [
+          "DiskInfoA64.exe",
+          "DiskInfo"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskInfoA64.exe",
+          "CrystalDiskInfo Shizuku Edition"
+        ]
+      ]
+    }
+  },
+  "persist": [
+    "Smart",
+    "DiskInfo.ini"
+  ],
+  "checkver": {
+    "sourceforge": "crystaldiskinfo",
+    "regex": "([\\d.]+)/CrystalDiskInfo.*Shizuku\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://sourceforge.net/projects/crystaldiskinfo/files/$version/CrystalDiskInfo$underscoreVersionShizuku.zip"
+  }
+}

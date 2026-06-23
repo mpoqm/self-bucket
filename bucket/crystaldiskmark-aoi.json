@@ -1,0 +1,64 @@
+{
+  "version": "9.0.3",
+  "description": "A simple disk benchmark software with Aoi themed UI",
+  "homepage": "https://crystalmark.info/en/software/crystaldiskmark/",
+  "license": "BSD-3-Clause",
+  "url": "https://sourceforge.net/projects/crystaldiskmark/files/9.0.3/CrystalDiskMark9_0_3Aoi.zip",
+  "hash": "md5:a4ba5f183bf2fa8bc7005c1fe78e61e5",
+  "architecture": {
+    "64bit": {
+      "bin": [
+        [
+          "DiskMark64.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMark64.exe",
+          "CrystalDiskMark Aoi Edition"
+        ]
+      ]
+    },
+    "32bit": {
+      "bin": [
+        [
+          "DiskMark32.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMark32.exe",
+          "CrystalDiskMark Aoi Edition"
+        ]
+      ]
+    },
+    "arm64": {
+      "bin": [
+        [
+          "DiskMarkA64.exe",
+          "DiskMark"
+        ]
+      ],
+      "shortcuts": [
+        [
+          "DiskMarkA64.exe",
+          "CrystalDiskMark Aoi Edition"
+        ]
+      ]
+    }
+  },
+  "persist": [
+    "DiskMark32.ini",
+    "DiskMark64.ini",
+    "DiskMarkA64.ini"
+  ],
+  "checkver": {
+    "sourceforge": "crystaldiskmark",
+    "regex": "([\\d.a-zA-Z]+)/CrystalDiskMark.*Aoi\\.zip"
+  },
+  "autoupdate": {
+    "url": "https://sourceforge.net/projects/crystaldiskmark/files/$version/CrystalDiskMark$underscoreVersionAoi.zip"
+  }
+}
