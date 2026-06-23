@@ -9,13 +9,13 @@
     "64bit": {
       "bin": [
         [
-          "DiskInfo64S.exe",
+          "DiskInfo64A.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfo64S.exe",
+          "DiskInfo64A.exe",
           "CrystalDiskInfo Aoi Edition"
         ]
       ]
@@ -23,13 +23,13 @@
     "32bit": {
       "bin": [
         [
-          "DiskInfo32S.exe",
+          "DiskInfo32A.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfo32S.exe",
+          "DiskInfo32A.exe",
           "CrystalDiskInfo Aoi Edition"
         ]
       ]
@@ -37,13 +37,13 @@
     "arm64": {
       "bin": [
         [
-          "DiskInfoA64S.exe",
+          "DiskInfoA64A.exe",
           "DiskInfo"
         ]
       ],
       "shortcuts": [
         [
-          "DiskInfoA64S.exe",
+          "DiskInfoA64A.exe",
           "CrystalDiskInfo Aoi Edition"
         ]
       ]

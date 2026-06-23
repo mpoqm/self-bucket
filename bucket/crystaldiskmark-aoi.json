@@ -9,13 +9,13 @@
     "64bit": {
       "bin": [
         [
-          "DiskMark64S.exe",
+          "DiskMark64A.exe",
           "DiskMark"
         ]
       ],
       "shortcuts": [
         [
-          "DiskMark64S.exe",
+          "DiskMark64A.exe",
           "CrystalDiskMark Aoi Edition"
         ]
       ]
@@ -23,13 +23,13 @@
     "32bit": {
       "bin": [
         [
-          "DiskMark32S.exe",
+          "DiskMark32A.exe",
           "DiskMark"
         ]
       ],
       "shortcuts": [
         [
-          "DiskMark32S.exe",
+          "DiskMark32A.exe",
           "CrystalDiskMark Aoi Edition"
         ]
       ]
@@ -37,22 +37,22 @@
     "arm64": {
       "bin": [
         [
-          "DiskMarkA64S.exe",
+          "DiskMarkA64A.exe",
           "DiskMark"
         ]
       ],
       "shortcuts": [
         [
-          "DiskMarkA64S.exe",
+          "DiskMarkA64A.exe",
           "CrystalDiskMark Aoi Edition"
         ]
       ]
     }
   },
   "persist": [
-    "DiskMark32S.ini",
-    "DiskMark64S.ini",
-    "DiskMarkA64S.ini"
+    "DiskMark32A.ini",
+    "DiskMark64A.ini",
+    "DiskMarkA64A.ini"
   ],
   "checkver": {
     "sourceforge": "crystaldiskmark",
