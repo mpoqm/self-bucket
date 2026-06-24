@@ -6,10 +6,12 @@
     "url": "https://github.com/abgox/InputTip/releases/download/v3.6.8/InputTip.zip",
     "hash": "beadefb3f5df9f1d46d3e142a289e6995e6aca4e1e95998d552763b97f27dfe0",
 	"extract_dir": "InputTip-main",
+    "persist": "src\\data\\config.ini",
     "shortcuts": [
         [
-            "InputTip.exe",
-            "InputTip"
+            "src\\AutoHotkey\\AutoHotkey64.exe",
+            "InputTip",
+            "src\\InputTip.ahk"
         ]
     ],
     "checkver": {
