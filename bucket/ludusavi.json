@@ -1,0 +1,29 @@
+{
+    "version": "0.31.0",
+    "description": "Game save backup tool.",
+    "homepage": "https://ludusavi.com",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mtkennerly/ludusavi/releases/download/v0.31.0/ludusavi-v0.31.0-win64.zip",
+			"hash": "sha256:f47a8ad8c708f01d2eb124704973beffab205e292f5287a10fc4a101f8d68706"
+        }
+    },
+    "bin": "ludusavi.exe",
+    "shortcuts": [
+        [
+            "ludusavi.exe",
+            "Ludusavi"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/mtkennerly/ludusavi"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/mtkennerly/ludusavi/releases/download/v$version/ludusavi-v$version-win64.zip"
+            }
+        }
+    }
+}
