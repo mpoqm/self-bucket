@@ -1,0 +1,53 @@
+{
+  "version": "11.3.0",
+  "description": "GNU Octave is a high-level language, primarily intended for numerical computations.",
+  "homepage": "https://octave.org",
+  "license": "GPL-3.0-or-later",
+  "notes": [
+    "This manifest uses the official Windows 64-bit 7z archive, not the installer.",
+    "Octave recommends running post-install.bat before first use; this manifest runs it during installation.",
+    "The archive defaults to Reference BLAS. To switch BLAS, run the GNU Octave BLAS Switcher shortcut or mingw64\\bin\\blas_switch.exe."
+  ],
+  "architecture": {
+    "64bit": {
+      "url": "https://ftpmirror.gnu.org/octave/windows/octave-11.3.0-w64.7z",
+      "hash": "fd3cf0e885467a15211b8ceded42800432a5462481324d49a896ef257e05d1a0",
+      "extract_dir": "octave-11.3.0-w64"
+    }
+  },
+  "post_install": [
+    "if (Test-Path \"$dir\\post-install.bat\") { cmd /c \"\"$dir\\post-install.bat\"\" }"
+  ],
+  "bin": [
+    [
+      "mingw64\\bin\\octave.exe",
+      "octave"
+    ],
+    [
+      "mingw64\\bin\\octave-cli.exe",
+      "octave-cli"
+    ]
+  ],
+  "shortcuts": [
+    [
+      "octave-launch.exe",
+      "GNU Octave"
+    ],
+    [
+      "mingw64\\bin\\blas_switch.exe",
+      "GNU Octave BLAS Switcher"
+    ]
+  ],
+  "checkver": {
+    "url": "https://octave.org/download",
+    "regex": "octave-([\\d.]+)-w64\\.7z"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://ftpmirror.gnu.org/octave/windows/octave-$version-w64.7z",
+        "extract_dir": "octave-$version-w64"
+      }
+    }
+  }
+}
