@@ -1,12 +1,12 @@
 {
-    "version": "2.11.0",
+    "version": "2.11.1",
     "description": "LightC desktop application.",
     "homepage": "https://github.com/Chunyu33/light-c",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Chunyu33/light-c/releases/download/v2.11.0/LightC_portable_x64.zip",
-            "hash": "d11928899aa021adcbe20bdea0b63078a50720e2b926e49af8d8877ba51fd44c"
+            "url": "https://github.com/Chunyu33/light-c/releases/download/v2.11.1/LightC_portable_x64.zip",
+            "hash": "6ad6947caf195a25f5194dec752407ce7488ba6dc3eb2001e56f9ac3e78abdcb"
         }
     },
     "shortcuts": [
