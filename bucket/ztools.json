@@ -1,28 +1,28 @@
 {
-  "version": "2.6.1",
-  "description": "ZTools desktop productivity tool.",
-  "homepage": "https://github.com/ZToolsCenter/ZTools",
-  "license": "Unknown",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v2.6.1/ZTools-2.6.1-win-x64.zip",
-      "hash": "sha256:70dbd0527ff87860726d2ab3e41c03f8becde442130b84d5de783afb4ff78502"
-    }
-  },
-  "shortcuts": [
-    [
-      "ZTools.exe",
-      "ZTools"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/ZToolsCenter/ZTools"
-  },
-  "autoupdate": {
+    "version": "3.0.1",
+    "description": "ZTools desktop productivity tool.",
+    "homepage": "https://github.com/ZToolsCenter/ZTools",
+    "license": "Unknown",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v$version/ZTools-$version-win-x64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v3.0.1/ZTools-3.0.1-win-x64.zip",
+            "hash": "081cb3377d59c0b0371762cb5a41b8e93d6131987c3f656f4f866bda49f6d3d8"
+        }
+    },
+    "shortcuts": [
+        [
+            "ZTools.exe",
+            "ZTools"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ZToolsCenter/ZTools"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v$version/ZTools-$version-win-x64.zip"
+            }
+        }
     }
-  }
 }
