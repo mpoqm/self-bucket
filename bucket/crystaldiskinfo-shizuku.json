@@ -1,63 +1,63 @@
 {
-  "version": "9.9.1",
-  "description": "A HDD/SSD utility software with Shizuku themed UI",
-  "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
-  "license": "MIT",
-  "url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.1/CrystalDiskInfo9_9_1Shizuku.zip",
-  "hash": "md5:2688dcda7f8c8b809c13e9c461e922e9",
-  "architecture": {
-    "64bit": {
-      "bin": [
-        [
-          "DiskInfo64S.exe",
-          "DiskInfo"
-        ]
-      ],
-      "shortcuts": [
-        [
-          "DiskInfo64S.exe",
-          "CrystalDiskInfo Shizuku Edition"
-        ]
-      ]
+    "version": "9.9.2",
+    "description": "A HDD/SSD utility software with Shizuku themed UI",
+    "homepage": "https://crystalmark.info/en/software/crystaldiskinfo/",
+    "license": "MIT",
+    "url": "https://sourceforge.net/projects/crystaldiskinfo/files/9.9.2/CrystalDiskInfo9_9_2Shizuku.zip",
+    "hash": "sha1:d61cee2addea0edc6e516878df905a3cb2cd6f45",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "DiskInfo64S.exe",
+                    "DiskInfo"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DiskInfo64S.exe",
+                    "CrystalDiskInfo Shizuku Edition"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "DiskInfo32S.exe",
+                    "DiskInfo"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DiskInfo32S.exe",
+                    "CrystalDiskInfo Shizuku Edition"
+                ]
+            ]
+        },
+        "arm64": {
+            "bin": [
+                [
+                    "DiskInfoA64S.exe",
+                    "DiskInfo"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DiskInfoA64S.exe",
+                    "CrystalDiskInfo Shizuku Edition"
+                ]
+            ]
+        }
     },
-    "32bit": {
-      "bin": [
-        [
-          "DiskInfo32S.exe",
-          "DiskInfo"
-        ]
-      ],
-      "shortcuts": [
-        [
-          "DiskInfo32S.exe",
-          "CrystalDiskInfo Shizuku Edition"
-        ]
-      ]
+    "persist": [
+        "Smart",
+        "DiskInfo.ini"
+    ],
+    "checkver": {
+        "sourceforge": "crystaldiskinfo",
+        "regex": "([\\d.]+)/CrystalDiskInfo.*Shizuku\\.zip"
     },
-    "arm64": {
-      "bin": [
-        [
-          "DiskInfoA64S.exe",
-          "DiskInfo"
-        ]
-      ],
-      "shortcuts": [
-        [
-          "DiskInfoA64S.exe",
-          "CrystalDiskInfo Shizuku Edition"
-        ]
-      ]
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/crystaldiskinfo/files/$version/CrystalDiskInfo$underscoreVersionShizuku.zip"
     }
-  },
-  "persist": [
-    "Smart",
-    "DiskInfo.ini"
-  ],
-  "checkver": {
-    "sourceforge": "crystaldiskinfo",
-    "regex": "([\\d.]+)/CrystalDiskInfo.*Shizuku\\.zip"
-  },
-  "autoupdate": {
-    "url": "https://sourceforge.net/projects/crystaldiskinfo/files/$version/CrystalDiskInfo$underscoreVersionShizuku.zip"
-  }
 }
