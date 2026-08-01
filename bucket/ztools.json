@@ -2,7 +2,7 @@
     "version": "3.0.1",
     "description": "ZTools desktop productivity tool.",
     "homepage": "https://github.com/ZToolsCenter/ZTools",
-    "license": "Unknown",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/ZToolsCenter/ZTools/releases/download/v3.0.1/ZTools-3.0.1-win-x64.zip",
