@@ -1,0 +1,45 @@
+{
+  "version": "0.6.9",
+  "description": "Cross-platform desktop application that turns documents into an organized, interlinked knowledge base.",
+  "homepage": "https://github.com/nashsu/llm_wiki",
+  "license": "Unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/nashsu/llm_wiki/releases/download/v0.6.9/LLM-Wiki-0.6.9-windows-x64-portable.zip",
+      "hash": "7aea513a949262d7ab2115e834d57ba9459749924437ff39c0fdcd3ae1b988be"
+    }
+  },
+  "installer": {
+    "script": [
+      "ensure \"$persist_dir\" | Out-Null",
+      "$appData = \"$env:APPDATA\\com.llmwiki.app\"",
+      "if (Test-Path \"$appData\") {",
+      "    if ((Get-Item \"$appData\" -Force).LinkType -ne 'Junction') { throw \"Existing application data found at $appData; move it to $persist_dir manually before installing.\" }",
+      "} else {",
+      "    New-Item -ItemType Junction -Path \"$appData\" -Target \"$persist_dir\" | Out-Null",
+      "}"
+    ]
+  },
+  "uninstaller": {
+    "script": [
+      "$appData = \"$env:APPDATA\\com.llmwiki.app\"",
+      "if ((Test-Path \"$appData\") -and ((Get-Item \"$appData\" -Force).LinkType -eq 'Junction')) { Remove-Item \"$appData\" -Force }"
+    ]
+  },
+  "shortcuts": [
+    [
+      "LLM Wiki.exe",
+      "LLM Wiki"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/nashsu/llm_wiki"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/nashsu/llm_wiki/releases/download/v$version/LLM-Wiki-$version-windows-x64-portable.zip"
+      }
+    }
+  }
+}
