@@ -1,0 +1,34 @@
+{
+  "version": "0.1.91",
+  "description": "MOD 模组管理工具。",
+  "homepage": "https://github.com/zwh0725/modora-updates",
+  "license": "Unknown",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/zwh0725/modora-updates/releases/download/v0.1.91/MODORA-Setup-0.1.91-x64.exe#/dl.7z",
+      "hash": "522d9732eb0a6d927eeee2ef1c2b9df4b3fe6156c1c7ea48baf97c50b467db5f"
+    }
+  },
+  "pre_install": [
+    "if (!(Test-Path \"$dir\\$PLUGINSDIR\\app-64.7z\")) { throw 'Expected MODORA payload app-64.7z was not found.' }",
+    "Expand-7zipArchive \"$dir\\$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+    "Remove-Item \"$dir\\$PLUGINSDIR\", \"$dir\\$R0\" -Recurse -Force -ErrorAction SilentlyContinue",
+    "if (!(Test-Path \"$dir\\MODORA Preview.exe\")) { throw 'MODORA Preview.exe was not found after extraction.' }"
+  ],
+  "shortcuts": [
+    [
+      "MODORA Preview.exe",
+      "MODORA"
+    ]
+  ],
+  "checkver": {
+    "github": "https://github.com/zwh0725/modora-updates"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/zwh0725/modora-updates/releases/download/v$version/MODORA-Setup-$version-x64.exe#/dl.7z"
+      }
+    }
+  }
+}
