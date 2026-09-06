@@ -10,10 +10,11 @@
     }
   },
   "pre_install": [
-    "if (!(Test-Path \"$dir\\$PLUGINSDIR\\app-64.7z\")) { throw 'Expected MODORA payload app-64.7z was not found.' }",
-    "Expand-7zipArchive \"$dir\\$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-    "Remove-Item \"$dir\\$PLUGINSDIR\", \"$dir\\$R0\" -Recurse -Force -ErrorAction SilentlyContinue",
-    "if (!(Test-Path \"$dir\\MODORA Preview.exe\")) { throw 'MODORA Preview.exe was not found after extraction.' }"
+    "$payload = Join-Path $dir '$PLUGINSDIR\\app-64.7z'",
+    "if (!(Test-Path $payload)) { throw 'Expected MODORA payload app-64.7z was not found.' }",
+    "Expand-7zipArchive $payload $dir",
+    "Remove-Item (Join-Path $dir '$PLUGINSDIR'), (Join-Path $dir '$R0') -Recurse -Force -ErrorAction SilentlyContinue",
+    "if (!(Test-Path (Join-Path $dir 'MODORA Preview.exe'))) { throw 'MODORA Preview.exe was not found after extraction.' }"
   ],
   "shortcuts": [
     [
