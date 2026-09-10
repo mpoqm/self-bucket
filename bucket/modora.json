@@ -1,35 +1,35 @@
 {
-  "version": "0.1.91",
-  "description": "MOD 模组管理工具。",
-  "homepage": "https://github.com/zwh0725/modora-updates",
-  "license": "Unknown",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/zwh0725/modora-updates/releases/download/v0.1.91/MODORA-Setup-0.1.91-x64.exe#/dl.7z",
-      "hash": "522d9732eb0a6d927eeee2ef1c2b9df4b3fe6156c1c7ea48baf97c50b467db5f"
-    }
-  },
-  "pre_install": [
-    "$payload = Join-Path $dir '$PLUGINSDIR\\app-64.7z'",
-    "if (!(Test-Path $payload)) { throw 'Expected MODORA payload app-64.7z was not found.' }",
-    "Expand-7zipArchive $payload $dir",
-    "Remove-Item (Join-Path $dir '$PLUGINSDIR'), (Join-Path $dir '$R0') -Recurse -Force -ErrorAction SilentlyContinue",
-    "if (!(Test-Path (Join-Path $dir 'MODORA Preview.exe'))) { throw 'MODORA Preview.exe was not found after extraction.' }"
-  ],
-  "shortcuts": [
-    [
-      "MODORA Preview.exe",
-      "MODORA"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/zwh0725/modora-updates"
-  },
-  "autoupdate": {
+    "version": "0.1.92",
+    "description": "MOD 模组管理工具。",
+    "homepage": "https://github.com/zwh0725/modora-updates",
+    "license": "Unknown",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/zwh0725/modora-updates/releases/download/v$version/MODORA-Setup-$version-x64.exe#/dl.7z"
-      }
+        "64bit": {
+            "url": "https://github.com/zwh0725/modora-updates/releases/download/v0.1.92/MODORA-Setup-0.1.92-x64.exe#/dl.7z",
+            "hash": "1d5486d8f97f48888a9212362f2cacf893eecb27b8e764cd01f37ba96338be52"
+        }
+    },
+    "pre_install": [
+        "$payload = Join-Path $dir '$PLUGINSDIR\\app-64.7z'",
+        "if (!(Test-Path $payload)) { throw 'Expected MODORA payload app-64.7z was not found.' }",
+        "Expand-7zipArchive $payload $dir",
+        "Remove-Item (Join-Path $dir '$PLUGINSDIR'), (Join-Path $dir '$R0') -Recurse -Force -ErrorAction SilentlyContinue",
+        "if (!(Test-Path (Join-Path $dir 'MODORA Preview.exe'))) { throw 'MODORA Preview.exe was not found after extraction.' }"
+    ],
+    "shortcuts": [
+        [
+            "MODORA Preview.exe",
+            "MODORA"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/zwh0725/modora-updates"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zwh0725/modora-updates/releases/download/v$version/MODORA-Setup-$version-x64.exe#/dl.7z"
+            }
+        }
     }
-  }
 }
