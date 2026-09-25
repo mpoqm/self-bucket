@@ -1,28 +1,28 @@
 {
-  "version": "1.8.0-beta.2",
-  "description": "现代化 Windows 鼠标轮盘手势系统。",
-  "homepage": "https://github.com/Star-Pie/StarPie",
-  "license": "Unknown",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/Star-Pie/StarPie/releases/download/v1.8.0-beta.2/StarPie-v1.8.0-beta.2-Standalone-win-x64.zip",
-      "hash": "2b165a4df71f8e4ba7cd3c2c87b89e1115008798fb4b9e39771435baec000a4b"
-    }
-  },
-  "shortcuts": [
-    [
-      "StarPie.exe",
-      "StarPie"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/Star-Pie/StarPie"
-  },
-  "autoupdate": {
+    "version": "1.7.4",
+    "description": "现代化 Windows 鼠标轮盘手势系统。",
+    "homepage": "https://github.com/Star-Pie/StarPie",
+    "license": "Unknown",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/Star-Pie/StarPie/releases/download/v$version/StarPie-v$version-Standalone-win-x64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/Star-Pie/StarPie/releases/download/v1.7.4/StarPie-v1.7.4-Standalone-win-x64.zip",
+            "hash": "cce7614137a413ef3433b24c03f311d8668259d6a34797bacf13cf8ed1dd65fe"
+        }
+    },
+    "shortcuts": [
+        [
+            "StarPie.exe",
+            "StarPie"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Star-Pie/StarPie"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Star-Pie/StarPie/releases/download/v$version/StarPie-v$version-Standalone-win-x64.zip"
+            }
+        }
     }
-  }
 }
