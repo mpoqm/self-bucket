@@ -1,13 +1,13 @@
 {
-    "version": "0.123.0",
+    "version": "0.123.1",
     "description": "清风输入法：轻量、快速、可定制的开源中文输入法，专为五笔和码表输入方案设计。",
     "homepage": "https://github.com/huanfeng/WindInput",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/huanfeng/WindInput/releases/download/v0.123.0/WindInput-Portable-0.123.0.zip",
-            "hash": "d3c610fffa77a5541d2d3c872f96abafffe3d48d28c19a35aadc57a9b4ba4b5c",
-            "extract_dir": "WindInput-0.123.0"
+            "url": "https://github.com/huanfeng/WindInput/releases/download/v0.123.1/WindInput-Portable-0.123.1.zip",
+            "hash": "02f0ee8109eababcf49322a1852613fdbd680ad3b2501321195cd39e1fd068b1",
+            "extract_dir": "WindInput-0.123.1"
         }
     },
     "persist": "userdata",
