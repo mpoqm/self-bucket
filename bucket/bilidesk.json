@@ -1,28 +1,28 @@
 {
-  "version": "1.2.4",
-  "description": "哔哩哔哩第三方 Windows 桌面客户端，支持视频播放、弹幕、登录、历史记录和收藏。",
-  "homepage": "https://github.com/ABING1111/BiliDesk",
-  "license": "GPL-3.0-only",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/ABING1111/BiliDesk/releases/download/v1.2.4/BiliDesk-1.2.4-portable.zip",
-      "hash": "f1ce8b69820ecc1bb2db5d9082049b03eca3a08f43088d4cc7eab03949c9e248"
-    }
-  },
-  "shortcuts": [
-    [
-      "BiliDesk.exe",
-      "BiliDesk"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/ABING1111/BiliDesk"
-  },
-  "autoupdate": {
+    "version": "1.2.5",
+    "description": "哔哩哔哩第三方 Windows 桌面客户端，支持视频播放、弹幕、登录、历史记录和收藏。",
+    "homepage": "https://github.com/ABING1111/BiliDesk",
+    "license": "GPL-3.0-only",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/ABING1111/BiliDesk/releases/download/v$version/BiliDesk-$version-portable.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/ABING1111/BiliDesk/releases/download/v1.2.5/BiliDesk-1.2.5-portable.zip",
+            "hash": "869b801d1d33217ec6773779024b59fc36a42ddf172c59c3cefecd944cb0dfbc"
+        }
+    },
+    "shortcuts": [
+        [
+            "BiliDesk.exe",
+            "BiliDesk"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/ABING1111/BiliDesk"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ABING1111/BiliDesk/releases/download/v$version/BiliDesk-$version-portable.zip"
+            }
+        }
     }
-  }
 }
