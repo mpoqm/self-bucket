@@ -1,31 +1,29 @@
 {
-  "version": "0.10.2",
-  "description": "本地截图、批注和布局调整工具，可将修改意见整理为 AI 可读的结构化反馈。",
-  "homepage": "https://github.com/Inginnng/EditHere",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/Inginnng/EditHere/releases/download/v0.10.2/EditHere-win-x64.zip",
-      "hash": "ec60b23388f927f997cce93681a36d7c7310421ad4d5e16820aa652e5a8f9a69"
-    }
-  },
-  "bin": [
-    "edithere-cli.exe"
-  ],
-  "shortcuts": [
-    [
-      "EditHere.exe",
-      "EditHere"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/Inginnng/EditHere"
-  },
-  "autoupdate": {
+    "version": "0.10.3",
+    "description": "本地截图、批注和布局调整工具，可将修改意见整理为 AI 可读的结构化反馈。",
+    "homepage": "https://github.com/Inginnng/EditHere",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/Inginnng/EditHere/releases/download/v$version/EditHere-win-x64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/Inginnng/EditHere/releases/download/v0.10.3/EditHere-win-x64.zip",
+            "hash": "f86a84d16c7f43a91d025367d3460aef52a3e4517bd4480c2330f5c28c66d55d"
+        }
+    },
+    "bin": "edithere-cli.exe",
+    "shortcuts": [
+        [
+            "EditHere.exe",
+            "EditHere"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Inginnng/EditHere"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Inginnng/EditHere/releases/download/v$version/EditHere-win-x64.zip"
+            }
+        }
     }
-  }
 }
