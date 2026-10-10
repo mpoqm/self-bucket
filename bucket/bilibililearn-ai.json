@@ -1,43 +1,49 @@
 {
-  "version": "1.8.2",
-  "description": "将 B 站学习视频转换为结构化笔记、自测题和复习资料的本地 AI 学习工具。",
-  "homepage": "https://github.com/yxyusage/BiliLearn-AI",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v1.8.2/BiliLearn-AI-v1.8.2-portable.zip",
-      "hash": "07f57ab00754add56081c0c57ff714e4351fffb0550c5c53bb3f6137de049f99"
-    }
-  },
-  "extract_dir": "BiliLearn-AI",
-  "persist": [
-    "data",
-    ".venv",
-    "models"
-  ],
-  "installer": {
-    "script": [
-      "$wrapper = @'\n@echo off\nsetlocal\nset \"BILI_DATA_DIR=%~dp0data\"\nset \"HF_HOME=%~dp0models\"\nset \"HUGGINGFACE_HUB_CACHE=%~dp0models\\hub\"\n\"%~dp0BiliLearn-AI-Launcher.exe\" %*\nendlocal\n'@",
-      "Set-Content -LiteralPath (Join-Path $dir 'BiliLearn-AI.cmd') -Value $wrapper -Encoding ASCII"
-    ]
-  },
-  "bin": [
-    "BiliLearn-AI.cmd"
-  ],
-  "shortcuts": [
-    [
-      "BiliLearn-AI.cmd",
-      "BiliLearn-AI"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/yxyusage/BiliLearn-AI"
-  },
-  "autoupdate": {
+    "version": "1.8.5",
+    "description": "将 B 站学习视频转换为结构化笔记、自测题和复习资料的本地 AI 学习工具。",
+    "homepage": "https://github.com/yxyusage/BiliLearn-AI",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v$version/BiliLearn-AI-v$version-portable.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v1.8.5/BiliLearn-AI-v1.8.5-portable.zip",
+            "hash": "8ddeb4be181df57a7f8f345fe29973c8a807bb887bf8b843a75bc1f19ec43df0"
+        }
+    },
+    "extract_dir": "BiliLearn-AI",
+    "persist": [
+        "data",
+        ".venv",
+        "models"
+    ],
+    "installer": {
+        "script": [
+            "$wrapper = @'
+@echo off
+setlocal
+set \"BILI_DATA_DIR=%~dp0data\"
+set \"HF_HOME=%~dp0models\"
+set \"HUGGINGFACE_HUB_CACHE=%~dp0models\\hub\"
+\"%~dp0BiliLearn-AI-Launcher.exe\" %*
+endlocal
+'@",
+            "Set-Content -LiteralPath (Join-Path $dir 'BiliLearn-AI.cmd') -Value $wrapper -Encoding ASCII"
+        ]
+    },
+    "bin": "BiliLearn-AI.cmd",
+    "shortcuts": [
+        [
+            "BiliLearn-AI.cmd",
+            "BiliLearn-AI"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/yxyusage/BiliLearn-AI"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v$version/BiliLearn-AI-v$version-portable.zip"
+            }
+        }
     }
-  }
 }
