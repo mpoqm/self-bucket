@@ -1,44 +1,52 @@
 {
-  "version": "4.4.7",
-  "description": "多人一起观影、听歌、语音聊天和屏幕分享平台。",
-  "homepage": "https://github.com/Zero-wyc/ZViewer",
-  "license": "MIT",
-  "architecture": {
-    "64bit": {
-      "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v4.4.7/zviewer-windows-x64.zip",
-      "hash": "609a3fca5e6f1437aa74156db398a1ec97657d073152df0e7af697507876bcf0"
-    }
-  },
-  "persist": [
-    "config"
-  ],
-  "installer": {
-    "script": [
-      "$wrapper = @'\n@echo off\nsetlocal\nset \"CONFIG_DIR=%~dp0config\"\nset \"DATABASE_URL=%CONFIG_DIR%\\dev.sqlite\"\nset \"UPLOADS_DIR=%CONFIG_DIR%\\uploads\"\nset \"AVATARS_DIR=%CONFIG_DIR%\\uploads\\avatars\"\nset \"MEDIA_DIR=%CONFIG_DIR%\\media\"\ncall \"%~dp0start.bat\" %*\nendlocal\n'@",
-      "Set-Content -LiteralPath (Join-Path $dir 'zviewer-scoop.cmd') -Value $wrapper -Encoding ASCII"
-    ]
-  },
-  "bin": [
-    [
-      "zviewer-scoop.cmd",
-      "zviewer"
-    ]
-  ],
-  "shortcuts": [
-    [
-      "zviewer-scoop.cmd",
-      "ZViewer",
-      "start"
-    ]
-  ],
-  "checkver": {
-    "github": "https://github.com/Zero-wyc/ZViewer"
-  },
-  "autoupdate": {
+    "version": "4.4.9",
+    "description": "多人一起观影、听歌、语音聊天和屏幕分享平台。",
+    "homepage": "https://github.com/Zero-wyc/ZViewer",
+    "license": "MIT",
     "architecture": {
-      "64bit": {
-        "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v$version/zviewer-windows-x64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v4.4.9/zviewer-windows-x64.zip",
+            "hash": "e8d02a4db037444974bccaa2b7a1e36184586030b796e2a772c093cc5693eb05"
+        }
+    },
+    "persist": "config",
+    "installer": {
+        "script": [
+            "$wrapper = @'
+@echo off
+setlocal
+set \"CONFIG_DIR=%~dp0config\"
+set \"DATABASE_URL=%CONFIG_DIR%\\dev.sqlite\"
+set \"UPLOADS_DIR=%CONFIG_DIR%\\uploads\"
+set \"AVATARS_DIR=%CONFIG_DIR%\\uploads\\avatars\"
+set \"MEDIA_DIR=%CONFIG_DIR%\\media\"
+call \"%~dp0start.bat\" %*
+endlocal
+'@",
+            "Set-Content -LiteralPath (Join-Path $dir 'zviewer-scoop.cmd') -Value $wrapper -Encoding ASCII"
+        ]
+    },
+    "bin": [
+        [
+            "zviewer-scoop.cmd",
+            "zviewer"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "zviewer-scoop.cmd",
+            "ZViewer",
+            "start"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Zero-wyc/ZViewer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v$version/zviewer-windows-x64.zip"
+            }
+        }
     }
-  }
 }
