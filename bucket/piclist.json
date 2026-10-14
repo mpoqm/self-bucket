@@ -1,16 +1,16 @@
 {
-    "version": "3.6.0",
+    "version": "3.6.1",
     "description": "PicList: cloud image hosting and picture bed management tool.",
     "homepage": "https://github.com/Kuingsmile/PicList",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.0/PicList-Setup-3.6.0-x64-portable.7z",
-            "hash": "f743bc01a5c8712af2314d553a5df1688a9adc686ad22ba90c7bd733dd1f695e"
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.1/PicList-Setup-3.6.1-x64-portable.7z",
+            "hash": "d87834bf08c8f4a3111175a24a3af9d5cd8855c01e12ace31e42c01d4bc3ba11"
         },
         "arm64": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.0/PicList-Setup-3.6.0-arm64-portable.7z",
-            "hash": "833f99d53fa76684d0290da1370a4efee9cdeef062c7618b7cdf4d68305b7c48"
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v3.6.1/PicList-Setup-3.6.1-arm64-portable.7z",
+            "hash": "be3c2820c8caad2b73f61c65313af8ebdba703c05d193bb473ea277c2c7b1bad"
         }
     },
     "shortcuts": [
