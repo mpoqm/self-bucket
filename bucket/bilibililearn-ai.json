@@ -1,12 +1,12 @@
 {
-    "version": "1.8.10",
+    "version": "1.8.11",
     "description": "将 B 站学习视频转换为结构化笔记、自测题和复习资料的本地 AI 学习工具。",
     "homepage": "https://github.com/yxyusage/BiliLearn-AI",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v1.8.10/BiliLearn-AI-v1.8.10-portable.zip",
-            "hash": "42a1560015e47eb5509c9cc5bc8bb8f4924732b2781650bf8220eb7a84d75baf"
+            "url": "https://github.com/yxyusage/BiliLearn-AI/releases/download/v1.8.11/BiliLearn-AI-v1.8.11-portable.zip",
+            "hash": "61e15dfcc825e702e4102b96699e8887a03667a6adb27807ebef15d956566107"
         }
     },
     "extract_dir": "BiliLearn-AI",
