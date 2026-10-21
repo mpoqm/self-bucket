@@ -1,12 +1,12 @@
 {
-    "version": "4.7.1",
+    "version": "4.7.3",
     "description": "多人一起观影、听歌、语音聊天和屏幕分享平台。",
     "homepage": "https://github.com/Zero-wyc/ZViewer",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v4.7.1/zviewer-windows-x64.zip",
-            "hash": "765d3250993011e74c17d69a2747e52c6dd546ce97cfa5b428ecf95a02394844"
+            "url": "https://github.com/Zero-wyc/ZViewer/releases/download/v4.7.3/zviewer-windows-x64.zip",
+            "hash": "073d6da828f41c598a4261d6fa18fa0b850512627932431343e050e35bceeefc"
         }
     },
     "persist": "config",
