@@ -1,12 +1,12 @@
 {
-    "version": "0.12.4",
+    "version": "0.12.5",
     "description": "本地截图、批注和布局调整工具，可将修改意见整理为 AI 可读的结构化反馈。",
     "homepage": "https://github.com/Inginnng/EditHere",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Inginnng/EditHere/releases/download/v0.12.4/EditHere-win-x64.zip",
-            "hash": "bc5653fe760243c1dda37cac603b73f772158334c499264113580e3035baf34b"
+            "url": "https://github.com/Inginnng/EditHere/releases/download/v0.12.5/EditHere-win-x64.zip",
+            "hash": "431788282a63853b908d1e2e23b21700aecf1de2cea1aa4adc7a163b640724f6"
         }
     },
     "bin": "edithere-cli.exe",
