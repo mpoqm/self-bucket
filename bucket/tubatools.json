@@ -1,12 +1,12 @@
 {
-    "version": "1.9.0",
+    "version": "1.9.1",
     "description": "图吧工具箱 WinUI 3 版。",
     "homepage": "https://github.com/luolangaga/tubatools",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.0/TubaWinUi3_Portable_1.9.0_x64.zip",
-            "hash": "a66806cbba164955b04de0376855493b4a95aceb325e031a4b0897df0289c64d",
+            "url": "https://github.com/luolangaga/tubatools/releases/download/v1.9.1/TubaWinUi3_Portable_1.9.1_x64.zip",
+            "hash": "8bccec71536decc7725a40580c3c813750e2a3ac27a5feffdda31f5ca0b558b7",
             "extract_dir": "src"
         }
     },
