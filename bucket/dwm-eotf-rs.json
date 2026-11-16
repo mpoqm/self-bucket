@@ -1,0 +1,23 @@
+{
+  "version": "0.19.2",
+  "description": "修补 Windows DWM 的 SDR 到 HDR EOTF，改善 HDR 模式下 SDR 内容的色彩显示。",
+  "homepage": "https://github.com/SERGEYDJUM/dwm_eotf_rs",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/SERGEYDJUM/dwm_eotf_rs/releases/download/v0.19.2/dwm_eotf_rs.exe",
+      "hash": "71f5e0786ec254489bf7fbd5ab96cf407ebd7aba71b9bfa3c7e287dffaeba23f"
+    }
+  },
+  "bin": "dwm_eotf_rs.exe",
+  "checkver": {
+    "github": "https://github.com/SERGEYDJUM/dwm_eotf_rs"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/SERGEYDJUM/dwm_eotf_rs/releases/download/v$version/dwm_eotf_rs.exe"
+      }
+    }
+  }
+}
