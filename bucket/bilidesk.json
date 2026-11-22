@@ -1,12 +1,12 @@
 {
-    "version": "1.8.3",
+    "version": "1.8.5",
     "description": "哔哩哔哩第三方 Windows 桌面客户端，支持视频播放、弹幕、登录、历史记录和收藏。",
     "homepage": "https://github.com/ABING1111/BiliDesk",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ABING1111/BiliDesk/releases/download/v1.8.3/BiliDesk-1.8.3-portable.zip",
-            "hash": "3ed28cf4bcf3a33adcf22c3efb750cb2534f4bc72af3864855a74dfdb4549c0a"
+            "url": "https://github.com/ABING1111/BiliDesk/releases/download/v1.8.5/BiliDesk-1.8.5-portable.zip",
+            "hash": "144115f7966d3f6774bacbc4299ee6f27b43999a82c86c0ef7464f1b446cee33"
         }
     },
     "shortcuts": [
